@@ -3,15 +3,18 @@ body {
 	background: linear-gradient(-135deg, rgba(255,183,139,1) 0%, rgba(253,217,255,1) 46%, rgba(145,236,255,1) 100%);
 	background-repeat: no-repeat;
 	color: white;
-	font-family: 'Courier Prime', monospace;
-	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 26px;
 	height: 100%;
 	margin: 0;
+	padding: 0 5em;
 }
 
-h1 {
+h1, h2, h3 {
 	font-size: inherit;
+	font-weight: inherit;
 	margin: 0;
+	display: block;
 }
 
 a {
@@ -20,20 +23,17 @@ a {
 }
 
 a:hover {
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .content {
 	max-width: 1000px;
 	margin: auto;
-	padding: 0 5em;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	font-weight: bold;
-	line-height: 2em;
 	padding: 5em 0;
 }
 
@@ -42,5 +42,51 @@ nav span {
 }
 
 footer {
-	margin-top: 5em;
+	padding-top: 5em;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		padding: 0 4em;
+	}
+	
+	.header {
+		padding: 4em 0;
+	}
+	
+	footer {
+		padding-top: 4em;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		padding: 0 3em;
+	}
+	
+	.header {
+		padding: 3em 0;
+	}
+	
+	footer {
+		padding-top: 3em;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		font-size: 22px;
+		padding: 0 1em;
+	}
+	
+	.header {
+		flex-direction: column;
+		justify-content: left;
+		padding: 3em 0;
+		line-height: 2em;
+	}
+	
+	nav span {
+		margin: 0;
+	}
 }
