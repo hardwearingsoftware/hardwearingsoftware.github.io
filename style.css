@@ -1,0 +1,46 @@
+body {
+	background: rgb(255,183,139);
+	background: linear-gradient(-135deg, rgba(255,183,139,1) 0%, rgba(253,217,255,1) 46%, rgba(145,236,255,1) 100%);
+	background-repeat: no-repeat;
+	color: white;
+	font-family: monospace;
+	font-size: 20px;
+	height: 100%;
+	margin: 0;
+}
+
+h1 {
+	font-size: inherit;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	font-style: underline;
+}
+
+a:hover {
+	font-weight: bold;	
+}
+
+.content {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 5em;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	line-height: 2em;
+	padding: 5em 0;
+}
+
+nav span {
+	margin-left: 2em;
+}
+
+footer {
+	margin-top: 5em;
+}
